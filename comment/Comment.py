@@ -41,6 +41,7 @@ class Comment:
 
             new_comment = {
                 "username": comment['user']['unique_id'],
+                "uid": comment['user']['uid'],
                 "nickname": comment['user']['nickname'],
                 "comment": comment['text'],
                 'create_time': self.__format_date(comment['create_time']),
